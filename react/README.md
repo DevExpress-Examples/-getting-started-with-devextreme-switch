@@ -1,4 +1,4 @@
-# DevExtreme React Switch - Getting Started 
+# DevExtreme React Switch - Getting Started  
 
 This repository stores the code examples of the React Switch component for the [Getting Started with Switch](https://js.devexpress.com/Documentation/Guide/UI_Components/Switch/Getting_Started_with_Switch/) tutorial. The component allows users to switch between two states: **ON** and **OFF**.
 

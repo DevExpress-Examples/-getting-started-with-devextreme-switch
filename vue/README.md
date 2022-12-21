@@ -1,4 +1,4 @@
-# DevExtreme Vue Switch - Getting Started 
+# DevExtreme Vue Switch - Getting Started  
 
 This repository stores the code examples of the Vue Switch component for the [Getting Started with Switch](https://js.devexpress.com/Documentation/Guide/UI_Components/Switch/Getting_Started_with_Switch/) tutorial. The component allows users to switch between two states: **ON** and **OFF**.
 
