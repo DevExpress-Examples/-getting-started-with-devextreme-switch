@@ -8,10 +8,10 @@ import notify from "devextreme/ui/notify";
 })
 
 export class AppComponent {
-    hint_message: string = "Click to switch on";
+    hintMessage: string = "Click to switch on";
     onValueChanged(e: {value: boolean}) {
-        this.hint_message = e.value ? "Click to switch off" : "Click to switch on";
-        const state_label = e.value ? "ON" : "OFF";
-        notify(`The component is switched ${state_label}`); 
+        this.hintMessage = e.value ? "Click to switch off" : "Click to switch on";
+        const stateLabel = e.value ? "ON" : "OFF";
+        notify(`The component is switched ${stateLabel}`); 
     }
 }
