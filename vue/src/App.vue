@@ -3,7 +3,7 @@
         :value="false"
         :width="80"
         :rtlEnabled="true"
-        :hint="hint_message"
+        :hint="hintMessage"
         @value-changed="onValueChanged($event)"
     > </DxSwitch>
 </template>
@@ -19,14 +19,14 @@ export default {
     },
     data() {
         return {
-            hint_message: "Click to switch on",
+            hintMessage: "Click to switch on",
         };
     },
     methods: {
         onValueChanged(e) {
-            this.hint_message = e.value ? "Click to switch off" : "Click to switch on";
-            const state_label = e.value ? "ON" : "OFF";
-            notify(`The component is switched ${state_label}`);
+            this.hintMessage = e.value ? "Click to switch off" : "Click to switch on";
+            const stateLabel = e.value ? "ON" : "OFF";
+            notify(`The component is switched ${stateLabel}`);
         }
     }
 }

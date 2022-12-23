@@ -5,13 +5,13 @@ import { Switch } from "devextreme-react/switch";
 import notify from "devextreme/ui/notify";
 
 function App() {
-    const [hint_message, setHintMessage] = useState("Click to switch on");
+    const [hintMessage, setHintMessage] = useState("Click to switch on");
 
     const onValueChanged = useCallback((e) => {
-        const message_text = e.value ? "Click to switch off" : "Click to switch on";
-        const state_label = e.value ? "ON" : "OFF";
-        setHintMessage(message_text);
-        notify(`The component is switched ${state_label}`); 
+        const messageText = e.value ? "Click to switch off" : "Click to switch on";
+        const stateLabel = e.value ? "ON" : "OFF";
+        setHintMessage(messageText);
+        notify(`The component is switched ${stateLabel}`); 
     }, []);
     
     return (
@@ -19,7 +19,7 @@ function App() {
             value={false}
             width={80}
             rtlEnabled={true}
-            hint={hint_message}
+            hint={hintMessage}
             onValueChanged={onValueChanged}
         />
     );
